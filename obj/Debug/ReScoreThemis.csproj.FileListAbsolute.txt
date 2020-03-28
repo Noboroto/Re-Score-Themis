@@ -1,0 +1,7 @@
+C:\Users\thanh\source\repos\ReScoreThemis\bin\Debug\ReScoreThemis.exe.config
+C:\Users\thanh\source\repos\ReScoreThemis\bin\Debug\ReScoreThemis.exe
+C:\Users\thanh\source\repos\ReScoreThemis\bin\Debug\ReScoreThemis.pdb
+C:\Users\thanh\source\repos\ReScoreThemis\obj\Debug\ReScoreThemis.csprojAssemblyReference.cache
+C:\Users\thanh\source\repos\ReScoreThemis\obj\Debug\ReScoreThemis.csproj.CoreCompileInputs.cache
+C:\Users\thanh\source\repos\ReScoreThemis\obj\Debug\ReScoreThemis.exe
+C:\Users\thanh\source\repos\ReScoreThemis\obj\Debug\ReScoreThemis.pdb
