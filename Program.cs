@@ -12,7 +12,7 @@ namespace ReScoreThemis
         static void Main(string[] args)
         {
             string MainPath = "";
-            Console.WriteLine("Main Path: ");
+            Console.WriteLine("Main Path for source code: ");
             MainPath = Console.ReadLine();
             bool exist = Directory.Exists(MainPath);
             if (!exist)
