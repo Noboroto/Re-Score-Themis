@@ -24,6 +24,7 @@ namespace ReScoreThemis
             }
             else
             {
+                if (Directory.Exists(MainPath + "\\Logs")) Directory.Delete(MainPath + "\\Logs", true);
                 ReScore(MainPath);
             }
         }
