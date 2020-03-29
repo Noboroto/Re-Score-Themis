@@ -11,24 +11,27 @@ namespace ReScoreThemis
     {
         static void Main(string[] args)
         {
-            string MainPath = "";
-            Console.WriteLine("Main Path for source code: ");
-            MainPath = Console.ReadLine();
-            bool exist = Directory.Exists(MainPath);
+            string SourcePath = "";
+            string TagetPath = "";
+            Console.WriteLine("Path for source code: ");
+            SourcePath = Console.ReadLine();
+            Console.WriteLine("Path of Themis logs folder: ");
+            TagetPath = Console.ReadLine();
+            bool exist = Directory.Exists(SourcePath);
             if (!exist)
             {
-                Console.WriteLine("The path isn't existed. Close Program");
+                Console.WriteLine("The source path isn't existed. Close Program");
                 Console.WriteLine("Press enter key to close ...");
                 Console.ReadLine();
                 return;
             }
             else
             {
-                if (Directory.Exists(MainPath + "\\Logs")) Directory.Delete(MainPath + "\\Logs", true);
-                ReScore(MainPath);
+                if (Directory.Exists(TagetPath + "\\Logs")) Directory.Delete(TagetPath + "\\Logs", true);
+                ReScore(SourcePath, TagetPath);
             }
         }
-        public static void ReScore(string ParentPath)
+        public static void ReScore(string ParentPath, string Taget)
         {
             try
             {
@@ -44,7 +47,15 @@ namespace ReScoreThemis
                         string Problem_Name = Path.GetFileNameWithoutExtension(code);
                         string extention = Path.GetExtension(code);
                         string new_name = "[" + Contestant_Name + "][" + Problem_Name + "]." + extention;
-                        File.Copy(code, ParentPath + "\\" + new_name);
+                        try
+                        {
+                            if (!Directory.Exists(Taget + "\\" + new_name)) File.Copy(code, Taget + "\\" + new_name);
+                        }
+                        catch (UnauthorizedAccessException e)
+                        {
+                            Console.WriteLine("Can not access directory: " + Taget);
+                            Console.WriteLine(e.Message);
+                        }
                     }
                 }
             }
