@@ -1,4 +1,4 @@
-# ReScoreThemis
+# Phần mềm chấm và update bảng xếp hạng bằng Themis của thầy Lê Minh Hoàng
 Chấm điểm và reup bảng xếp hạng cho các themis web interface
 
 Phần mềm được viết bằng C#, chạy trên Console. Cần .NET framework từ 4.0 trở lên
