@@ -1,3 +1,5 @@
 bin
 obj
 .vs/ReScoreThemis/v16/.suo
+.vs/ReScoreThemis/v16/Server/sqlite3/db.lock
+.vs/ReScoreThemis/v16/Server/sqlite3/storage.ide

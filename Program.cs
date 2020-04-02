@@ -11,12 +11,12 @@ namespace ReScoreThemis
     {
         static void Main(string[] args)
         {
-            string SourcePath = "";
+            string SourcePath = "", TagetPath = "";
             Console.WriteLine("Path for source code: ");
             SourcePath = Console.ReadLine();
-            string TagetPath = SourcePath;
             Console.WriteLine("Path of Themis logs folder: ");
             TagetPath = Console.ReadLine();
+            if (TagetPath == "") TagetPath = SourcePath;
             bool exist = Directory.Exists(SourcePath);
             if (!exist)
             {
