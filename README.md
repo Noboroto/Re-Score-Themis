@@ -6,3 +6,5 @@ Phần mềm được viết bằng C#, chạy trên Console. Cần .NET framewo
 Các định nghĩa trong phần mền:
 * Source Path: thư mục chưa bài làm của thí sinh (đã phân loại)
 * Taget Path: thư mục chứa bài làm online được chỉ định cho Themis chấm (nếu bỏ trống sẽ lấy giống Source Path)
+
+Tải về tại [đây](https://github.com/Noboroto/Re-Score-Themis/releases)
