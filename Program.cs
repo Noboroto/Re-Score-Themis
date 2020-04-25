@@ -14,7 +14,7 @@ namespace ReScoreThemis
             string SourcePath = "", TagetPath = "";
             Console.WriteLine("Path for source code: ");
             SourcePath = Console.ReadLine();
-            Console.WriteLine("Path of Themis logs folder: ");
+            Console.WriteLine("Path of Themis logs folder (Press Enter: same as source code path): ");
             TagetPath = Console.ReadLine();
             if (TagetPath == "") TagetPath = SourcePath;
             bool exist = Directory.Exists(SourcePath);
